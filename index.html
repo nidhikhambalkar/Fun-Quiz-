@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Quiz App</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+<div class="quiz-container">
+
+<button id="themeToggle">
+<i class="bi bi-moon-fill"></i>
+</button>
+
+<h1><i class="bi bi-patch-question-fill"></i> Smart Quiz</h1>
+
+<div class="progress-bar">
+<div id="progress"></div>
+</div>
+
+<div class="timer">
+<i class="bi bi-clock"></i>
+<span id="time">10</span>s
+</div>
+
+<div id="question">Question</div>
+
+<div id="options" class="options"></div>
+
+<button id="next">
+Next Question
+<i class="bi bi-arrow-right"></i>
+</button>
+
+</div>
+
+<div id="result-box" class="hidden"></div>
+
+<audio id="correctSound"
+src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3"></audio>
+
+<audio id="wrongSound"
+src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
